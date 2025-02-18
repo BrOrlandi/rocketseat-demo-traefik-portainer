@@ -1,6 +1,7 @@
 services:
   traefik:
     image: traefik:v3
+    restart: always
     container_name: traefik
     command:
       - '--api.dashboard=true'
